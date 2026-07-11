@@ -1,0 +1,57 @@
+.certs {
+  position: relative;
+  background: var(--void);
+  padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 6vw, 6rem);
+  border-top: 1px solid rgba(236, 232, 224, 0.08);
+}
+
+.inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.4rem 0;
+  border-top: 1px solid rgba(236, 232, 224, 0.14);
+  transition: padding-left 0.3s var(--ease-cinematic);
+}
+
+.row:last-child {
+  border-bottom: 1px solid rgba(236, 232, 224, 0.14);
+}
+
+.row:hover {
+  padding-left: 0.5rem;
+}
+
+.rowMain h3 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 0 0.35rem;
+  color: var(--mist);
+}
+
+.issuer {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--signal-blue);
+  letter-spacing: 0.04em;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ash);
+  white-space: nowrap;
+}

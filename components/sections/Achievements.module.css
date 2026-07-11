@@ -1,0 +1,50 @@
+.achievements {
+  position: relative;
+  background: var(--void-soft);
+  padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 6vw, 6rem);
+  border-top: 1px solid rgba(236, 232, 224, 0.08);
+}
+
+.inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.callout {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: 18px;
+  border: 1px solid rgba(236, 232, 224, 0.12);
+  background: rgba(236, 232, 224, 0.03);
+  flex-wrap: wrap;
+}
+
+.number {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  line-height: 1;
+  background: linear-gradient(135deg, var(--ember), var(--signal-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.calloutText h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0 0 0.6rem;
+  color: var(--mist);
+}
+
+.calloutText p {
+  margin: 0;
+  max-width: 32rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ash);
+}

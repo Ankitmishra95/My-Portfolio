@@ -1,0 +1,30 @@
+.heading {
+  max-width: 44rem;
+  margin-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.center {
+  max-width: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 1.1rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: var(--mist);
+  margin: 0;
+}

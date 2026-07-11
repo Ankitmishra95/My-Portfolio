@@ -1,0 +1,59 @@
+.skills {
+  position: relative;
+  background: var(--void-soft);
+  padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 6vw, 6rem);
+  border-top: 1px solid rgba(236, 232, 224, 0.08);
+}
+
+.inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.groupGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.group {
+  padding: 1.5rem 1.5rem 1.75rem;
+  border-radius: 14px;
+  border: 1px solid rgba(236, 232, 224, 0.1);
+  background: rgba(236, 232, 224, 0.03);
+  transition: border-color 0.35s var(--ease-cinematic),
+    background 0.35s var(--ease-cinematic);
+}
+
+.group:hover {
+  border-color: rgba(255, 138, 61, 0.35);
+  background: rgba(255, 138, 61, 0.05);
+}
+
+.groupLabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal-blue);
+  margin: 0 0 1.1rem;
+}
+
+.tagList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.85rem;
+  color: var(--mist);
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(236, 232, 224, 0.14);
+  background: rgba(8, 9, 12, 0.4);
+  white-space: nowrap;
+}
